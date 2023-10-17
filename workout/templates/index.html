@@ -1,0 +1,331 @@
+    <!doctype html>
+    <html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Workout App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="static/admin/assets/img/favicon.ico">
+        <!-- Place favicon.ico in the root Internist, General Practitonery -->
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="static/admin/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/admin/assets/css/animate.min.css">
+        <link rel="stylesheet" href="static/admin/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="static/admin/assets/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="static/admin/assets/css/dripicons.css">
+        <link rel="stylesheet" href="static/admin/assets/css/slick.css">
+        <link rel="stylesheet" href="static/admin/assets/css/default.css">
+        <link rel="stylesheet" href="static/admin/assets/css/meanmenu.css">
+        <link rel="stylesheet" href="static/admin/assets/css/style.css">
+        <link rel="stylesheet" href="static/admin/assets/css/responsive.css">
+    </head>
+    <body>
+        <div class="home-2">
+        <!-- header -->
+        <header class="header-area">    
+            
+            <div id="header-sticky" class="menu-area menu-area2">
+                <div class="container">
+                    <div class="second-menu">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo2">
+                                    <a href="index.html"><img src="static/admin/assets/img/logo/w_logo.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6" style="align-items: center;">                               
+                                <div class="main-menu text-right pr-15">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-sub">
+                                                <a href="">Home</a>
+                                            </li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            
+                                            <li class="has-sub"> 
+                                                <a href="">Join Now</a>
+                                                <ul>													
+                                                    <li><a href="{{ url_for('workblog.register_page') }}">Register</a></li>
+                                                    <li><a href="{{ url_for('workblog.login_page') }}">Login</a></li>
+                            <li><a href="{{ url_for('workblog.login_page') }}">Log Out</a></li>
+                                                </ul>
+                                            </li>               
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>    
+                                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                    <div class="right-menu">
+                                    <ul>
+                                        <li>
+                                            <div class="menu-search text-right">
+                                                <a href="#" data-toggle="modal" data-target=".popup1">
+                                                    <i class="fas fa-search"></i> 
+                                                </a>
+                                                <input type="text" placeholder="Enter Name">
+                                                </div>
+                                        </li> 
+                                    </ul>
+                                    
+                                    </div>
+                                    
+                                    
+                                    
+                            </div>
+                                <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+        <!-- main-area -->
+        <main>
+            <!-- slider-area -->
+            <section id="parallax2" class="slider-area fix p-relative">
+                
+                <div class="slider-shape ss-two layer" data-depth="0.30"><div class="per-text"><h2>We Build<span>Champions</span></h2></div></div>
+                
+                <div class="slider-shape ss-six layer" data-depth="0.15"><img src="static/admin/assets/img/bg/heade-object.png" alt="shape"></div>
+                <div class="slider-shape ss-eight layer" data-depth="0.50"><img src="static/admin/assets/img/bg/header-img.png" alt="shape"></div>
+                <div class="slider-active2">
+                <div class="single-slider slider-bg d-flex align-items-center" style="background-image:url(static/admin/assets/img/bg/header-bg.png); background-repeat: no-repeat; background-position: right;background-size: inherit;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <div class="slider-content s-slider-content text-left">
+                                        <h2 data-animation="fadeInUp" data-delay=".4s">Perfect Workout
+    Coach For <span>Body Shape</span></h2>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Quisque leo augue, lobortis ac tellus nec, posuere ultricies nulla. Praesent massa odio, pellentesque in consectetur quis, volutpat sit amet erat.</p>
+                                        <div class="slider-btn mt-25">                                          
+                                            <a href="{{ url_for('workblog.allworkout_page') }}" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">All Workouts</a>					
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>                    
+                
+                
+            </section>
+            <!-- slider-area-end -->
+            <!-- booking-area -->
+            <section id="booking" class="booking-area p-relative">
+                <div class="container">
+                    <form action="#" class="contact-form" >
+                            <div class="row align-items-center">
+                                <div class="col-lg-12"> 
+                                    <ul>
+                                        <li> 
+                                            <div class="contact-field p-relative c-name">  
+                                                <img src="static/admin/assets/img/bg/ad-icon1.png">
+                                                <input type="text" placeholder="Stay Active">
+                                            </div>      
+                                        </li>
+                                        <li> 
+                                            <div class="contact-field p-relative c-name">  
+                                                <img src="static/admin/assets/img/bg/ad-icon2.png">
+                                                <input type="text" placeholder="Stay Healthy">
+                                            </div>      
+                                        </li>
+                                            <li> 
+                                            <div class="contact-field p-relative c-name">  
+                                                <img src="static/admin/assets/img/bg/ad-icon3.png">
+                                                <input type="text" placeholder="Daily Reminder to Workout">
+                                            </div>      
+                                        </li>
+                                            <li> 
+                                            <div class="contact-field p-relative c-name">  
+                                                <img src="static/admin/assets/img/bg/ad-icon4.png">
+                                                <input type="text" placeholder="Stay Motivated">
+                                            </div>      
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="slider-btn">                                          
+                                            <a href="{{ url_for('workblog.workout_page') }}" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Add New Workouts</a>
+                                        </div>     
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        
+                    </form>
+                </div>
+            </section>
+            <!-- booking-area-end -->
+            
+            <!-- about-area -->
+            <section id="about" class="about-area about-p mt-80 pt-120 pb-120 p-relative">
+                <div class="parolx-text-right">About Us</div>
+                <div class="container">
+                    <div class="row align-items-center">		
+                        <!-- <div class="slider-btn mt-25">                                          
+                        <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">All Workouts</a>					
+                    </div> -->
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="s-about-img p-relative">
+                                <img src="static/admin/assets/img/bg/about-img.png" alt="img">
+                                
+                            </div>
+                        </div>
+                        
+            
+            
+        </main>
+        <!-- main-area-end -->
+            <!-- footer -->
+        <footer class="footer-bg footer-p pt-90">
+            <div class="footer-top-heiding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="section-title">        
+                                <h2> Subscribe To Our Newsletter For Latest Updates</h2>
+                                
+                            </div>
+                        </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="newslater-area">
+                                <form name="ajax-form" id="contact-form4" action="#" method="post" class="contact-form newslater">
+                                <div class="form-group">
+                                    <input class="form-control" id="email2" name="email" type="email" placeholder="Email Address..." value="" required=""> 
+                                    <button type="submit" class="btn btn-custom" id="send2">Subscribe <i class="fas fa-chevron-right"></i></button>
+                                </div>
+                                <!-- /Form-email -->	
+                            </form>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="footer-top pb-50">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        
+                        <div class="col-xl-3 col-lg-3 col-sm-6">
+                            
+                            <div class="footer-widget mb-30">
+                                <div class="flog mb-35">
+                                    <a href="#"><img src="static/admin/assets/img/logo/w_logo.png" alt="logo"></a>
+                                </div>
+                                <div class="f-contact">
+                                    <ul>
+                                    <li>
+                                        <i class="icon far fa-clock"></i>
+                                        <span>09038531605<br></span>
+                                    </li>
+                                    <li>
+                                        <i class="icon dripicons-mail"></i>
+                                            <span><a href="mailto:info@example.com">arinzemartin68@gmail.com</a><br><a href="mailto:sale@example.com">arinzemartin68@gmail.com</a></span>
+                                    </li>
+                                    
+                                </ul>
+                                    
+                                    </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Our Links</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>                                        
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Career</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="f-widget-title">
+                                    <h5>Other Links</h5>
+                                </div>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Project</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Latest Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-xl-5 col-lg-5 col-sm-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-text mb-20">
+                                    <p>Fusce orci ligula, tincidunt ut metus vel, venenatis aliquet tortor. Duis et consequat enim. Curabitur pulvinar, dolor at pulvinar molestie, augue massa volutpat felis, at rhoncus tortor velit vel diam. Cras ac suscipit metus. Cras vitae quam eget risus efficitur malesuada. Praesent condimentum lacus nisi, eu venenatis purus eleifend sit amet. Vivamus ac enim vitae erat scelerisque ullamcorper. Ut id pretium sem. Proin ac consectetur orci.</p>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-12">                         
+                                &copy; 2020 Workout App.                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+    </div>
+            <!-- JS here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/one-page-nav-min.js"></script>
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/paroller.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/js_isotope.pkgd.min.js"></script>
+        <script src="js/imagesloaded.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/parallax-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/element-in-view.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

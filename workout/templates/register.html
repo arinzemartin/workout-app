@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="static/admin/assets/img/favicon.ico">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="static/admin/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/admin/assets/css/animate.min.css">
+    <link rel="stylesheet" href="static/admin/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/admin/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="static/admin/assets/css/dripicons.css">
+    <link rel="stylesheet" href="static/admin/assets/css/slick.css">
+    <link rel="stylesheet" href="static/admin/assets/css/default.css">
+    <link rel="stylesheet" href="static/admin/assets/css/meanmenu.css">
+    <link rel="stylesheet" href="static/admin/assets/css/style.css">
+    <link rel="stylesheet" href="static/admin/assets/css/responsive.css">
+
+</head>
+<style> 
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background: black;
+    }
+    .input-container {
+        position: relative;
+    }
+    input[type="password"],
+    input[type="text"] {
+        border: none;
+        border-bottom: 2px solid #3498db;
+        width: 300px;
+        padding: 10px;
+        font-size: 18px;
+        transition: border-bottom 0.3s, width 0.3s;
+        outline: none;
+    }
+    input[type="password"]:focus,
+    input[type="text"]:focus,
+    input[type="text"]:focus {
+        border-bottom: 2px solid #2ecc71;
+        width: 350px;
+    }
+    
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        padding: 10px;
+        transition: transform 0.3s, font-size 0.3s;
+    }
+    input[type="password"]:focus + label,
+    input[type="text"]:focus + label,
+    input[type="text"]:focus + label {
+        transform: translateY(-25px);
+        font-size: 14px;
+        color: #2ecc71;
+    }
+        .pluto{
+            margin-top: 2%;
+            height: 40vh;
+            width: 50%;
+            margin-left: 15%;
+        }
+        
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    .pluto{
+        margin-top: 2%;
+        height: 40vh;
+        width: 50%;
+        margin-left: 15%;
+    }
+</style>
+
+
+<body>
+
+    <header class="header-area" style="background-color: black;">    
+                
+            <div id="header-sticky" class="menu-area menu-area2">
+                <div class="container">
+                    <div class="second-menu">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo2">
+                                    <a href="index.html"><img src="static/admin/assets/img/logo/w_logo.png" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6" style="align-items: center;">                               
+                                <div class="main-menu text-right pr-15">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="about.html" style="color: white;">About Us</a></li>
+                                            
+                                            <li class="has-sub"> 
+                                                <a href="" style="color: white;">Join Now</a>
+                                                <ul>													
+                                                    <li><a href="{{ url_for('workblog.login_page') }}">Log In</a></li>
+                                                </ul>
+                                            </li>               
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>    
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="right-menu">
+                                    <ul>
+                                        <li>
+                                            <div class="menu-search text-right">
+                                                <a href="#" data-toggle="modal" data-target=".popup1">
+                                                    <i class="fas fa-search"></i> 
+                                                </a>
+                                                <input type="text" placeholder="Enter Name">
+                                            </div>
+                                        </li> 
+                                    </ul>
+                                
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- slider-area -->
+            <section id="parallax2" class="slider-area fix p-relative">
+              
+                <div class="slider-shape ss-two layer" data-depth="0.30"><div class="per-text"><h2>We Build<span>Champions</span></h2></div></div>
+                
+                <div class="slider-shape ss-six layer" data-depth="0.15"><img src="static/admin/assets/img/bg/heade-object.png" alt="shape"></div>
+                <div class="slider-shape ss-eight layer" data-depth="0.50"><img src="static/admin/assets/img/bg/header-img.png" alt="shape"></div>
+                <div class="slider-active2">
+				<div class="single-slider slider-bg d-flex align-items-center" style="background-image:url(static/admin/assets/img/bg/header-bg.png); background-repeat: no-repeat; background-position: right;background-size: inherit;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <div class="slider-content s-slider-content text-left">
+                                        <div class="pluto">
+                                            <h2>Register</h2>
+                                            <form action="/create" method="post">
+                                        
+                                                <div class="input-container">
+                                                    <input  type="text" name="name" placeholder="Enter your name" required>
+                                                </div>
+                                                <br>
+                                                <div class="">
+                                                    <input  placeholder="Enter your email" type="text" name="email" required>
+                                                </div>
+                                                <br>
+                                                <div class="">
+                                                    <input  placeholder="Enter your Password" type="password" name="password"  required>
+                                                </div>
+                                                <br>
+                                                
+                                                <div class="slider-btn">
+                                                    <button  class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s" >Register</button>
+                                                </div>
+                                            </form>
+                                            </div>
+                                    </div>
+                                </div>
+								<div class="col-lg-5">
+									
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+</body>
+</html>
